@@ -1,0 +1,51 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\Debug\semaforo_avr.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>semaforo_avr.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>semaforo_avr.map</FILE>
+  <FILE>semaforo_avr.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>172</LINE></reset>
+  <OCI1A_Interrupt><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>98</LINE></OCI1A_Interrupt>
+  <if_state_1><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>22</LINE></if_state_1>
+  <if_state_2><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>30</LINE></if_state_2>
+  <if_state_3><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>38</LINE></if_state_3>
+  <if_state_4><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>46</LINE></if_state_4>
+  <if_state_5><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>54</LINE></if_state_5>
+  <if_state_6><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>62</LINE></if_state_6>
+  <if_state_7><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>70</LINE></if_state_7>
+  <if_state_8><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>77</LINE></if_state_8>
+  <if_state_9><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>84</LINE></if_state_9>
+  <if_state_10><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>91</LINE></if_state_10>
+  <skip_1><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>107</LINE></skip_1>
+  <skip_2><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>112</LINE></skip_2>
+  <skip_3><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>117</LINE></skip_3>
+  <skip_4><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>122</LINE></skip_4>
+  <skip_5><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>127</LINE></skip_5>
+  <skip_6><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>132</LINE></skip_6>
+  <skip_7><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>137</LINE></skip_7>
+  <skip_8><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>142</LINE></skip_8>
+  <skip_9><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>147</LINE></skip_9>
+  <skip_10><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>152</LINE></skip_10>
+  <skip_11><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>158</LINE></skip_11>
+  <skip_inc><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>161</LINE></skip_inc>
+  <main_lp><FILE>C:\Users\joaoa\Documents\semaforo_avr\semaforo_avr\main.asm</FILE><LINE>213</LINE></main_lp>
+ </LABELS>
+</ASSEMBLER_INFO>
