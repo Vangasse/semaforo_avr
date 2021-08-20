@@ -5,6 +5,7 @@
 ;Sinal 3: Sandoval Arroxelas -> Álvaro Otácilio (sul e norte)
 ;Sinal 4: Álvaro Otacílio (norte) -> Sandoval Arroxelas e Álvaro Otacílio (sul)
 ;Sinal 5: Pedestres da Álvaro Otacílio
+;explicar as variáveis
 .def temp = r16
 .def green_leds = r17 ;Sinal Verde
 .def yellow_leds = r18 ;Sinal Amarelo
@@ -12,19 +13,18 @@
 .def counter = r20
 .def leds = r22
 .cseg
-
+;Explicar esses jumps
 jmp reset
 .org OC1Aaddr
 jmp OCI1A_Interrupt
 
-
+;Funções para setar os estados dos sinais
 ;Função que seta o primeiro estado: Sinal 3 Verde, Sinais 1, 2, 4, 5 Vermelhos
 if_state_1:
 	ldi green_leds, 0b00100
 	ldi yellow_leds, 0b00000
 	ldi red_leds, 0b11011
 	ret
-
 
 ;Função que seta o segundo estado: Sinal 3 Amarelo, Sinais 1, 2, 4, 5 Vermelhos
 if_state_2:
@@ -33,14 +33,12 @@ if_state_2:
 	ldi red_leds, 0b11011
 	ret
 
-
 ;Função que seta o terceiro estado: Sinal 5 Verde, Sinais 1, 2, 3, 4 Vermelhos
 if_state_3:
 	ldi green_leds, 0b10000
 	ldi yellow_leds, 0b00000
 	ldi red_leds, 0b01111
 	ret
-
 
 ;Função que seta o quarto estado: Sinais 1, 2 Verdes, Sinais 3, 4, 5 Vermelhos
 if_state_4:
@@ -49,7 +47,6 @@ if_state_4:
 	ldi red_leds, 0b011100
 	ret
 
-
 ;Função que seta o quinto estado: Sinal 1 Verde, Sinal 2 Amarelo, Sinais 3, 4, 5 Vermelhos
 if_state_5:
 	ldi green_leds, 0b00001
@@ -57,14 +54,12 @@ if_state_5:
 	ldi red_leds, 0b011100
 	ret
 
-
 ;Função que seta o sexto estado: Sinal 1 Verde, Sinais 2, 3, 4, 5 Vermelhos
 if_state_6:
 	ldi green_leds, 0b00001
 	ldi yellow_leds, 0b00000
 	ldi red_leds, 0b011110
 	ret
-
 
 ;Função que seta o sétimo estado: Sinais 1 e 4 Verdes, Sinais 2, 3, 5 Vermelhos
 if_state_7:
@@ -96,6 +91,7 @@ if_state_10:
 
 ;Interrupção por tempo a cada segundo
 OCI1A_Interrupt:
+	;explicar as 3 linhas seguintes
 	push r16
 	in r16, SREG
 	push r16
@@ -160,6 +156,7 @@ OCI1A_Interrupt:
 		inc r20 ;Incrementa o contador
 	skip_inc:
 
+	;Explicar as próximas linhas
 		out PORTB, green_leds
 		out PORTC, yellow_leds
 		out PORTD, red_leds
@@ -170,12 +167,14 @@ OCI1A_Interrupt:
 		reti
 
 reset:
+	;explicar a pilha
 	;Stack initialization
 	ldi temp, low(RAMEND)
 	out SPL, temp
 	ldi temp, high(RAMEND)
 	out SPH, temp
-
+	;explicar a configuração da interrupção
+	;as linhas tratando sobre a variavel leds, parece ser inútil para o nosso código, rever.
 	;leds display alternating pattern
 	ldi temp, $FF
 	out DDRB, temp
